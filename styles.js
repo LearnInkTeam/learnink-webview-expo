@@ -39,7 +39,9 @@ export const paragraphText = {
 
 export const textInputBox = {
 	width: "100%",
-	border: "solid 1px dodgerblue",
+	borderStyle: "solid",
+	borderWidth: 1,
+	borderColor: "grey",
 	padding: 10,
 	textAlign: "center",
 	marginBottom: 20,

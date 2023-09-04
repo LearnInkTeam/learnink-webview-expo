@@ -9,7 +9,7 @@ function Home({ orgId, clearOrgId }) {
 			<View style={card}>
 				<Text style={titleText}>Welcome to the {orgId} app!</Text>
 				<Text style={paragraphText}>Press on the training tab below to test the webview integration</Text>
-				<TouchableOpacity onPress={clearOrgId} title="Set org id" style={buttonStyle}>
+				<TouchableOpacity onPress={clearOrgId} style={buttonStyle}>
 					<Text style={buttonText}>Clear org id</Text>
 				</TouchableOpacity>
 			</View>

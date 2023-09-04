@@ -37,13 +37,13 @@ export default function Navigation({ orgId, clearOrgId }) {
 				</Tab.Screen>
 				<Tab.Screen
 					name="Training"
-					component={TrainingScreen}
 					options={{
 						tabBarIcon: ({ color, size }) => <FontAwesome name="question-circle" color={color} size={26} />,
 						headerShown: false,
 					}}
-					initialParams={{ path: `/${orgId}/learning` }}
-				/>
+				>
+					{(props) => <TrainingScreen {...props} orgId={orgId} />}
+				</Tab.Screen>
 			</Tab.Navigator>
 		</NavigationContainer>
 	)

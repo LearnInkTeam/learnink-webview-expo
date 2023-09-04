@@ -10,6 +10,12 @@ export default function App() {
 	const [textInput, setTextInput] = useState(undefined)
 	const [orgId, setOrgId] = useState(undefined)
 
+	const updateOrgId = () => {
+		if (textInput) {
+			setOrgId(textInput.toLowerCase())
+		}
+	}
+
 	return (
 		<ThemeProvider>
 			<StatusBar backgroundColor="dodgerblue" style="light" />
@@ -27,7 +33,7 @@ export default function App() {
 							value={textInput}
 							style={textInputBox}
 						/>
-						<TouchableOpacity onPress={() => setOrgId(textInput)} title="Set org id" style={buttonStyle}>
+						<TouchableOpacity onPress={updateOrgId} style={buttonStyle}>
 							<Text style={buttonText}>Set org id</Text>
 						</TouchableOpacity>
 					</View>
