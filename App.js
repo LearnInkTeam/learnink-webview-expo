@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar"
 import { View, TextInput, Text, TouchableOpacity } from "react-native"
 
 import { container, card, titleText, textInputBox, buttonStyle, buttonText, paragraphText } from "./styles"
-import RootNavigation from "./Navigation"
+import RootNavigation from "./components/Navigation"
 
 export default function App() {
 	const [textInput, setTextInput] = useState(undefined)

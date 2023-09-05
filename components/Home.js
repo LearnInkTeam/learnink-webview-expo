@@ -1,7 +1,7 @@
 import React from "react"
 import { View, Text, TouchableOpacity } from "react-native"
 
-import { container, card, buttonStyle, buttonText, titleText, paragraphText } from "./styles"
+import { container, card, buttonStyle, buttonText, titleText, paragraphText } from "../styles"
 
 function Home({ orgId, clearOrgId }) {
 	return (
